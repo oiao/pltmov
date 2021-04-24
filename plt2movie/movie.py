@@ -11,6 +11,7 @@ class Movie:
         self.args = []
         self.f = None
         self.count = 0
+        self.command = '-c:v libx264'
 
     def record(self,f):
         """
@@ -40,7 +41,7 @@ class Movie:
 
         with Pool(processes=processes) as p:
             p.starmap( _plot, self.args )
-        cmd = ['ffmpeg', '-r', fps, '-i', opj(tempdir, '%07d.png'), '-c:v', 'libx264', '-crf', crf, '-y', outfile]
+        cmd = ['ffmpeg', '-r', fps, '-i', opj(tempdir, '%07d.png'), '-crf', crf, '-y'] +  self.command.split() + [outfile]
         p = Popen([str(i) for i in cmd], stderr=DEVNULL if silent else None)
         p.communicate()
 
