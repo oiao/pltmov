@@ -26,7 +26,9 @@ def plot(xmax, text):
     plt.text(0.1, 0.1, str(text), transform=plt.gca().transAxes, size=18)
     plt.tight_layout()
 ````
-Make sure your plotting function does **not** save anything to disk
+Make sure that:
+* your plotting function does not save anything to disk
+* there are no keyword arguments in the function
 
 #### 3. Call the plotting function with as many arguments as the number of frames in your movie
 ```python
@@ -41,4 +43,4 @@ for r, t in zip(ranges,texts):
 movie.write('movie.mp4', fps=60)
 ```
 
-All arguments for `write()` are documented in the [docstring](https://github.com/oiao/pltmov/blob/master/pltmov/movie.py#L54).
+All arguments for `write()` are documented in the [docstring](https://github.com/oiao/pltmov/blob/main/pltmov/movie.py#L54).
