@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from os.path import join as opj
 
 NAME = 'pltmov'
-DESCR = 'FFmpeg wrapper for pyplot for easy animation'
+DESCR = 'Pyplot to FFmpeg wrapper for easy animation'
 packages = [NAME]+[f'{NAME}.'+i for i in find_packages(NAME)]
 
 with open(opj(NAME, '_version.py')) as f:
