@@ -1,6 +1,10 @@
 This package provides a wrapper around ffmpeg, allowing for seamless stitching of your pyplot plots into a movie file.
 
 
+# Installation
+  * `git clone https://github.com/oiao/pltmov.git`
+  * `pip install -e pltmov`
+
 # How to use
 
 1. Import and initialize a `Movie` instance:
@@ -10,7 +14,7 @@ This package provides a wrapper around ffmpeg, allowing for seamless stitching o
   movie = Movie()
   ````
 
-2. Define your plotting function as usual, but use the instance's `@record` wrapper:
+2. Define your plotting function as usual, but use the instance's `record` wrapper:
 
   ```python
   import numpy as np
@@ -37,3 +41,7 @@ This package provides a wrapper around ffmpeg, allowing for seamless stitching o
   ```python
   movie.write('movie.mp4', fps=60)
   ```
+
+-------
+
+For an overview of all arguments of `write()`, see the [docstring](https://github.com/oiao/pltmov/blob/5b0a4e3c5fdff74fe5aa380600751f1f21d0da05/pltmov/movie.py#L54).
