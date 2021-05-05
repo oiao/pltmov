@@ -1,4 +1,4 @@
-This package provides a wrapper around ffmpeg, allowing for seamless stitching of your pyplot plots into a movie file.
+This package provides a wrapper around [ffmpeg](http://ffmpeg.org/), allowing for seamless stitching of your pyplot plots into a movie file.
 
 
 # Installation
