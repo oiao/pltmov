@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from os.path import join as opj
 
-NAME = 'plt2movie'
+NAME = 'pltmov'
 DESCR = 'FFmpeg wrapper for pyplot for easy animation'
 packages = [NAME]+[f'{NAME}.'+i for i in find_packages(NAME)]
 
