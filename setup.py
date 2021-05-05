@@ -25,5 +25,6 @@ setup(
     packages         = packages,
     package_dir      = {NAME : NAME},
     package_data     = {NAME : ['tests/*']},
+    tests_requre     = ['numpy'],
 #     scripts          = [opj('scripts', NAME)],
 )
