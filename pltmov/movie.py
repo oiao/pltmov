@@ -70,11 +70,11 @@ class Movie:
         processes : optional, int
             Number of MP workres to be used when writing all frames to disk.
             Defaults to `os.cpu_count()`
-        tempdir : options, str
+        tempdir : optional, str
             Temporary directory that stores all frames before passing them to `ffmpeg`.
             If set, the directory will not be removed after this method has been called.
         silent : bool
-            Whether to suppress all `ffmpeg` input.
+            Whether to suppress all `ffmpeg` input
 
         Examples
         --------

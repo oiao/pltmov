@@ -40,4 +40,4 @@ for r, t in zip(ranges,texts):
 movie.write('movie.mp4', fps=60)
 ```
 
-All arguments for `write()` are documented in the [docstring](https://github.com/oiao/pltmov/blob/5b0a4e3c5fdff74fe5aa380600751f1f21d0da05/pltmov/movie.py#L54).
+All arguments for `write()` are documented in the [docstring](https://github.com/oiao/pltmov/blob/main/pltmov/movie.py#L54).
