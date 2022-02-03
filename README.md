@@ -30,9 +30,9 @@ Make sure that:
 * your plotting function does not save anything to disk
 * there are no keyword arguments in the function
 
-#### 3. Call the plotting function with as many arguments as the number of frames in your movie
+#### 3. Each call to the plotting function is now recorded as a frame in your movie
 ```python
-ranges = np.linspace(0.1,  100, 1000)
+ranges = np.linspace(0.1,  100, 1000) # 1k frames
 texts  = [f"frame {i}" for i in range(1, len(ranges)+1)]
 for r, t in zip(ranges,texts):
     plot(r, t)
