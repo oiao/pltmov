@@ -6,6 +6,8 @@ from tempfile import TemporaryDirectory
 from subprocess import Popen, DEVNULL
 from typing import Callable, List, Tuple
 
+__all__ = ['Movie']
+
 class Movie:
     def __init__(self):
         self.args = []
